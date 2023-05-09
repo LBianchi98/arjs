@@ -13,7 +13,10 @@
         <a-asset-item id="my-mtl" src="assets/obj/ConceptCar.mtl"></a-asset-item>
       </a-assets>
       <a-marker preset="hiro">
-        <a-sphere position="0 0 0" color="green"></a-sphere>
+        <a-entity
+          obj-model="obj: #my-obj; mtl: #my-mtl;"
+          scale="10 10 10"
+        ></a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
