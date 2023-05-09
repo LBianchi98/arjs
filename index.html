@@ -8,15 +8,12 @@
   </head>
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs="">
-      <a-assets>
-        <a-asset-item id="my-obj" src="assets/obj/ConceptCar.obj"></a-asset-item>
-        <a-asset-item id="my-mtl" src="assets/obj/ConceptCar.mtl"></a-asset-item>
-      </a-assets>
       <a-marker preset="hiro">
         <a-entity
           obj-model="obj: #my-obj; mtl: #my-mtl;"
           scale="10 10 10"
         ></a-entity>
+        <a-entity obj-model="obj: url(/assets/obj/ConceptCar.obj); mtl: url(/assets/obj/ConceptCar.mtl)"></a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
